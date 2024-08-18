@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Model/PatientService.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Interfaces/RendezVous.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Interfaces/visit.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/CabinetDoctor.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/photo/cabinet.jpg</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Controles/DBManager.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Model/visitService.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Interfaces/Patient.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Files/ListPatient.txt</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Model/RendezVousService.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Controles/BDInfo.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Interfaces/ordennecment.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Files/ListRV.txt</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Files/ListOrdonance.txt</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Model/OrdonnanceService.java</file>
+            <file>file:/home/el-barae/NetBeansProjects/CabinetDoctor/src/cabinetdoctor/Files/ListVisit.txt</file>
+        </group>
+    </open-files>
+</project-private>

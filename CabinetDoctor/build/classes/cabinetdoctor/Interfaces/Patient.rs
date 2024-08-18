@@ -1,0 +1,2 @@
+cabinet_doctor.Interfaces.Patient$1
+cabinet_doctor.Interfaces.Patient
