@@ -20,10 +20,7 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableRowSorter;
 
 
-/**
- *
- * @author el-barae
- */
+
 public class Patient {
 
     /**
