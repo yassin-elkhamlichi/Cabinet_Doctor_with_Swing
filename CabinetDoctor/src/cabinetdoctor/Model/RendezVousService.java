@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author el-barae
+ * @author yassin
  */
 public class RendezVousService extends BDInfo {
     
