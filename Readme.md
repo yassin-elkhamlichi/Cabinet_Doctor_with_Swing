@@ -118,6 +118,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Developer**: [Yassin El Khamlichi](https://github.com/yassin-elkhamlichi)
 
-## 📞 Support
 
-For support and questions, please create an issue on the GitHub repository.
