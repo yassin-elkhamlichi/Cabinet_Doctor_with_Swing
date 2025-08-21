@@ -6,7 +6,7 @@
 Cabinet Doctor with Swing is a robust desktop application developed in Java Swing, designed to streamline the management of a doctor\'s clinic. It offers comprehensive features for handling patient records, scheduling appointments, managing medical visits, and generating prescriptions, providing an efficient solution for healthcare professionals.
 
 ## 🌟 Features
-ghn
+
 - **Patient Management**: Efficiently add, view, update, and delete patient information.
 - **Appointment Scheduling (Rendezvous)**: Manage patient appointments with ease, including scheduling and tracking.
 - **Medical Visit Tracking**: Record and organize details of each patient visit.
