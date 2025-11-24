@@ -2,7 +2,7 @@
 
 
 
-[![Java](https://img.shields.io/badge/Java25-blue.svg)](https://www.java.com/)
+[![Java](https://img.shields.io/badge/Java11-blue.svg)](https://www.java.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
