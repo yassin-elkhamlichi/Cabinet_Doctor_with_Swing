@@ -3,7 +3,6 @@
 
 
 [![Java](https://img.shields.io/badge/Java11-blue.svg)](https://www.java.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 
 
@@ -218,15 +217,6 @@ Cabinet_Doctor_with_Swing/
 └── tables.sql              # SQL script for database table creation
 
 ```
-
-
-
-## 📝 License
-
-
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 
 
 ## 👥 Credits
