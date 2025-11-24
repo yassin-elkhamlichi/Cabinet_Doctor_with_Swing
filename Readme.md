@@ -1,54 +1,235 @@
-# 🏥 Cabinet Doctor: Desktop Clinic Management System
+# 🩺 Cabinet Doctor with Swing - Desktop Clinic Management System
 
-![Java](https://img.shields.io/badge/Java-Swing-orange)
-![Build](https://img.shields.io/badge/Build_Tool-Apache_Ant-red)
-![Database](https://img.shields.io/badge/Database-MySQL-blue)
-![Architecture](https://img.shields.io/badge/Pattern-MVC-green)
 
-## 📖 Overview
-**Cabinet Doctor** is a robust desktop ERP solution engineered to digitize the daily operations of medical clinics. Built with **Java Swing**, it provides a responsive, event-driven interface for healthcare professionals.
 
-Unlike simple CRUD apps, this system implements a strict **MVC (Model-View-Controller)** architecture to separate the Graphical User Interface (`Interfaces`) from the Business Logic (`Controles`) and Data Access Layers (`Model`), ensuring code maintainability and scalability.
+[![Java](https://img.shields.io/badge/Java-99.4%25-blue.svg)](https://www.java.com/)
 
-## 🚀 Key Features
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-### 🩺 Clinical Operations
-* **Patient Records:** Comprehensive CRUD operations for patient demographics and medical history.
-* **Medical Visits:** detailed tracking of consultations, diagnosis notes, and history.
-* **Prescription Management (Ordonnances):** Automated generation of prescriptions linked to specific visits.
 
-### 📅 Administration
-* **Appointment Scheduling:** A dedicated "Rendezvous" module to manage time slots and queue management.
-* **Reporting:** Visual overview of daily appointments and patient flow.
 
-### 💻 Technical Highlights
-* **Legacy Modernization:** Demonstrates proficiency in maintaining and building robust desktop applications using standard Java APIs.
-* **Data Persistence:** Direct JDBC integration with **MySQL** for reliable, ACID-compliant data storage.
-* **Custom Build System:** Utilizes **Apache Ant** for dependency management and build automation.
+Cabinet Doctor with Swing is a robust desktop application developed in Java Swing, designed to streamline the management of a doctor\'s clinic. It offers comprehensive features for handling patient records, scheduling appointments, managing medical visits, and generating prescriptions, providing an efficient solution for healthcare professionals.
 
----
 
-## 🛠️ Tech Stack
 
-| Component | Technology |
-| :--- | :--- |
-| **Language** | Java SE (JDK 11+) |
-| **GUI Framework** | Java Swing (AWT/JFC) |
-| **Architecture** | Model-View-Controller (MVC) |
-| **Database** | MySQL 8.0 |
-| **Build Tool** | Apache Ant |
-| **Driver** | MySQL Connector/J |
+## 🌟 Features
 
----
 
-## 🏗️ Project Architecture
 
-The codebase is organized into distinct layers to follow separation of concerns:
+- **Patient Management**: Efficiently add, view, update, and delete patient information.
+
+- **Appointment Scheduling (Rendezvous)**: Manage patient appointments with ease, including scheduling and tracking.
+
+- **Medical Visit Tracking**: Record and organize details of each patient visit.
+
+- **Prescription Generation (Ordonnances)**: Create and manage patient prescriptions.
+
+- **User-Friendly Interface**: Intuitive graphical user interface built with Java Swing for easy navigation and operation.
+
+- **Database Integration**: Seamlessly connects with a MySQL database for persistent data storage.
+
+
+
+## 🛠️ Technology Stack
+
+
+
+- **Frontend**: Java Swing (for desktop GUI)
+
+- **Backend**: Java
+
+- **Database**: MySQL (requires a running MySQL server)
+
+- **Build Tool**: Apache Ant
+
+
+
+## 📋 Prerequisites
+
+
+
+Before you can run this application, ensure you have the following installed:
+
+
+
+- **Java Development Kit (JDK)**: Version 11 or higher (e.g., OpenJDK 11).
+
+- **Apache Ant**: Version 1.10.x or higher.
+
+- **MySQL Server**: A running MySQL database instance.
+
+- **MySQL JDBC Driver**: The MySQL Connector/J library (usually included in the `lib` directory or needs to be added to the project\'s classpath).
+
+
+
+## ⚡ Quick Installation & Setup
+
+
+
+### 1. Clone the Repository
+
+
 
 ```bash
-src/cabinetdoctor/
-├── Interfaces/      # [VIEW] JPanel & JFrame forms (GUI Logic)
-├── Controles/       # [CONTROLLER] DB Managers & Business Logic
-├── Model/           # [MODEL] Data Entities (Patient, Visit Objects)
-├── Files/           # [UTILS] File handling & Export utilities
-└── photo/           # [ASSETS] Static UI resources
+
+git clone https://github.com/yassin-elkhamlichi/Cabinet_Doctor_with_Swing.git
+
+cd Cabinet_Doctor_with_Swing/CabinetDoctor
+
+```
+
+
+
+### 2. Database Setup
+
+
+
+This application uses a MySQL database. You need to set up your database and configure the connection.
+
+
+
+#### a. Create Database and Table
+
+
+
+First, create a database in your MySQL server (e.g., `cabinet_doctor`). Then, import the `tables.sql` file located in the root of the cloned repository to create the necessary tables.
+
+
+
+```bash
+
+# Example using MySQL client
+
+mysql -u your_username -p
+
+CREATE DATABASE cabinet_doctor;
+
+USE cabinet_doctor;
+
+SOURCE /path/to/Cabinet_Doctor_with_Swing/tables.sql;
+
+```
+
+
+
+#### b. Configure Database Connection
+
+
+
+The database connection details are likely hardcoded or configured within the Java source files (e.g., `cabinetdoctor/Controles/DBManager.java` or `cabinetdoctor/Controles/BDInfo.java`). You will need to locate these files and update the database URL, username, and password to match your MySQL setup.
+
+
+
+Look for lines similar to these in the Java source code:
+
+
+
+```java
+
+String url = "jdbc:mysql://localhost:3306/cabinet_doctor";
+
+String user = "root";
+
+String password = "your_password";
+
+```
+
+
+
+**Important**: Replace `localhost:3306`, `cabinet_doctor`, `root`, and `your_password` with your actual database server details.
+
+
+
+### 3. Build the Application
+
+
+
+Navigate to the `CabinetDoctor` directory and build the project using Ant:
+
+
+
+```bash
+
+cd /home/ubuntu/Cabinet_Doctor_with_Swing/CabinetDoctor
+
+ant
+
+```
+
+
+
+This command will compile the Java source files and create a runnable JAR file in the `dist` directory (e.g., `dist/CabinetDoctor.jar`).
+
+
+
+### 4. Run the Application
+
+
+
+After a successful build, you can run the application from the `CabinetDoctor` directory:
+
+
+
+```bash
+
+java -jar dist/CabinetDoctor.jar
+
+```
+
+
+
+**Note**: This is a Java Swing desktop application, so it requires a graphical environment to run. If you are running this on a server without a display, you might encounter `java.awt.HeadlessException`.
+
+
+
+## 🗂️ Project Structure
+
+
+
+```
+
+Cabinet_Doctor_with_Swing/
+
+├── CabinetDoctor/          # Main application source and build files
+
+│   ├── build/              # Compiled classes and build artifacts
+
+│   ├── build.xml           # Ant build script
+
+│   ├── lib/                # External libraries (e.g., MySQL JDBC driver)
+
+│   ├── nbproject/          # NetBeans project configuration
+
+│   └── src/                # Java source code
+
+│       └── cabinetdoctor/  # Main Java package
+
+│           ├── Controles/  # Database connection and control logic
+
+│           ├── Files/      # File handling utilities
+
+│           ├── Interfaces/ # GUI forms and panels
+
+│           ├── Model/      # Business logic and data services
+
+│           └── photo/      # Image resources
+
+├── ModelsDeDonnees.pdf     # Database schema documentation (PDF)
+
+└── tables.sql              # SQL script for database table creation
+
+```
+
+
+
+## 📝 License
+
+
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
+## 👥 Credits
+
+- **Developer**: [Yassin El Khamlichi](https://github.com/yassin-elkhamlichi)
